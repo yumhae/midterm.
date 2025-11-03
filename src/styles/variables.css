@@ -1,0 +1,25 @@
+:root {
+  /* New palette (from your attachment) */
+  /* New pink palette */
+  --pink-50:  #FFF5F9;
+  --pink-100: #FDE8F0;
+  --pink-300: #FBCFE8;
+  --pink-400: #F472B6; /* primary */
+  --pink-600: #DB2777; /* secondary / accent */
+  --muted-gray: #858585;
+
+  /* Mapped site tokens (pink theme) */
+  --primary-color: var(--pink-400);
+  --secondary-color: var(--pink-600);
+  --accent-color: var(--pink-300);
+  --bg-color: #FFF5F9; /* pale pink background */
+  --card-bg: var(--pink-100);
+  --text-dark: #3A0E2F; /* deep berry for contrast */
+  --text-light: var(--muted-gray);
+  --nav-bg: rgba(255,255,255,0.94);
+
+  --max-width: 1100px;
+  --card-radius: 14px;
+  --transition-bounce: cubic-bezier(0.36, 0, 0.66, -0.56);
+  --transition-smooth: cubic-bezier(0.17, 0.55, 0.55, 1);
+}
