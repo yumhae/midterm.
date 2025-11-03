@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import './App.css';
 import './styles/variables.css';
 import './styles/navbar.css';
@@ -129,24 +129,24 @@ const App: React.FC = () => {
             <div className="nav-menu-container">
               <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                 <li>
-                  <a onClick={() => scrollToSection('home')} className="nav-link">
+                  <button type="button" onClick={() => scrollToSection('home')} className="nav-link">
                     Home
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('about')} className="nav-link">
+                  <button type="button" onClick={() => scrollToSection('about')} className="nav-link">
                     About
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('projects')} className="nav-link">
+                  <button type="button" onClick={() => scrollToSection('projects')} className="nav-link">
                     Projects
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('contact')} className="nav-link">
+                  <button type="button" onClick={() => scrollToSection('contact')} className="nav-link">
                     Contact
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
